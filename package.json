@@ -1,0 +1,22 @@
+{
+  "name": "digital-clock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elvisdiaz1/digitial-clock.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elvisdiaz1/digitial-clock/issues"
+  },
+  "homepage": "https://github.com/Elvisdiaz1/digitial-clock#readme",
+  "dependencies": {
+    "dayjs": "^1.11.10"
+  }
+}
