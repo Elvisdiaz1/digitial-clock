@@ -1,4 +1,5 @@
-// const dayjs = require("dayjs");
-// import dayjs from "dayjs"; // ES 2015
-// dayjs().format();
-console.log(dayjs().format());
+let timeContainer = document.createElement("p");
+
+timeContainer.innerText = dayjs().format("hh-mm-ss");
+
+document.body.appendChild(timeContainer);
