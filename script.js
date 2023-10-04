@@ -1,4 +1,5 @@
 let timeContainer = document.createElement("p");
+timeContainer.classList.add("time");
 document.body.appendChild(timeContainer);
 
 setInterval(function () {

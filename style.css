@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.time {
+  font-size: 10em;
+  font-family: "Allerta Stencil", sans-serif;
+  /* font-family: "Tourney", cursive; */
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 1.5em;
+}
