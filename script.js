@@ -1,5 +1,6 @@
 let timeContainer = document.createElement("p");
-
-timeContainer.innerText = dayjs().format("hh-mm-ss");
-
 document.body.appendChild(timeContainer);
+
+setInterval(function () {
+  timeContainer.innerText = dayjs().format("hh-mm-ss");
+}, 100);
