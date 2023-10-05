@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.time {
+#time {
   font-size: 10em;
   font-family: "Allerta Stencil", sans-serif;
   /* font-family: "Tourney", cursive; */
@@ -13,4 +13,8 @@
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 1.5em;
+}
+
+#MyColorPicker {
+  display: none;
 }
