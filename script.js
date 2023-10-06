@@ -10,14 +10,30 @@ setInterval(function () {
   time.innerText = dayjs().format("hh-mm-ss a");
 }, 100);
 
-// window.addEventListener("click", changeColor);
 function changeColor() {
   document.getElementById("time").style.color =
     document.getElementById("MyColorPicker").value;
+}
+
+function lightMode() {
+  document.body.style.backgroundColor = "white";
+}
+function DarkMode() {
+  document.body.style.backgroundColor = "grey";
 }
 
 colorButton.addEventListener("click", function () {
   document.getElementById("MyColorPicker").style.display = "block";
   colorButton.innerText = "Confirm";
   changeColor();
+});
+
+let lightDarkModeChanger = document.getElementById("checkbox");
+lightDarkModeChanger.addEventListener("click", function () {
+  if (!lightDarkModeChanger.checked) {
+    DarkMode();
+  }
+  if (lightDarkModeChanger.checked) {
+    lightMode();
+  }
 });

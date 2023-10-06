@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Digital Clock</title>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,8 +16,11 @@
   </head>
   <body>
     <div id="timeContainer"></div>
-    <div id="buttons"></div>
-    <input name="MyColorPicker" type="color" id="MyColorPicker" />
+    <div id="buttons">
+      <input name="light-darkMode" type="checkbox" id="checkbox" />
+      <label>Dark Mode</label>
+      <input name="MyColorPicker" type="color" id="MyColorPicker" />
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
