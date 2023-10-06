@@ -28,12 +28,21 @@ colorButton.addEventListener("click", function () {
   changeColor();
 });
 
-let lightDarkModeChanger = document.getElementById("checkbox");
+let lightDarkModeChanger = document.getElementById("ldCheckbox");
 lightDarkModeChanger.addEventListener("click", function () {
-  if (!lightDarkModeChanger.checked) {
+  if (lightDarkModeChanger.checked) {
     DarkMode();
   }
-  if (lightDarkModeChanger.checked) {
+  if (!lightDarkModeChanger.checked) {
     lightMode();
+  }
+});
+let rgbModeChanger = document.getElementById("rgbCheckbox");
+rgbModeChanger.addEventListener("click", function () {
+  if (rgbModeChanger.checked) {
+    document.getElementById("time").classList.add("rainbow");
+  }
+  if (!rgbModeChanger.checked) {
+    document.getElementById("time").classList.remove("rainbow");
   }
 });
