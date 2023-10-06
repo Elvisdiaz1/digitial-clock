@@ -41,8 +41,11 @@ let rgbModeChanger = document.getElementById("rgbCheckbox");
 rgbModeChanger.addEventListener("click", function () {
   if (rgbModeChanger.checked) {
     document.getElementById("time").classList.add("rainbow");
+    document.getElementById("time").style.color = "";
   }
   if (!rgbModeChanger.checked) {
     document.getElementById("time").classList.remove("rainbow");
+    document.getElementById("time").style.color =
+      document.getElementById("MyColorPicker").value;
   }
 });
