@@ -2,11 +2,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important; */
 }
 
+/* Title Styling */
 #title {
   font-size: 5em;
   align-items: center;
@@ -16,6 +14,7 @@
   margin-top: 1em;
 }
 
+/* Clock Styling */
 #time {
   font-size: 10em;
   font-family: "Allerta Stencil", sans-serif;
@@ -28,16 +27,28 @@
   text-shadow: 5px 5px 5px #000000;
 }
 
+/* Color Choosing Box Styling */
 #MyColorPicker {
   display: none;
   margin-right: -11em;
 }
 
+/* Button Styling */
 button {
   font-size: 1em;
   margin-left: 10px;
 }
 
+#buttons {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0px 20em;
+  padding-top: 20px;
+}
+
+/* RGB animation */
 #time.rainbow {
   background: linear-gradient(
     124deg,
@@ -107,21 +118,14 @@ button {
   }
 }
 
-#buttons {
-  font-size: 1.5em;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 0px 20em;
-  padding-top: 20px;
-}
-
 /* Tablet */
 @media screen and (min-width: 430px) and (max-width: 850px) {
+  /* Clock Styling */
   #time {
     font-size: 6em;
     text-align: center;
   }
+  /* Button Styling */
   #buttons {
     font-size: 2.5em;
     margin: 0 0;
@@ -136,6 +140,8 @@ button {
     width: 4em;
     height: 25px;
   }
+
+  /* Color Choosing Box Styling */
   #MyColorPicker {
     margin-right: -3em;
   }
@@ -143,16 +149,19 @@ button {
 
 /* Mobile */
 @media screen and (max-width: 430px) {
+  /* Title Styling */
   #title {
     font-size: 6em;
     margin-left: 0.7em;
   }
+  /* Clock Styling */
   #time {
     font-size: 5em;
     text-align: center;
     padding-top: 3.5em;
   }
 
+  /* Button Styling */
   #buttons {
     font-size: 3.5em;
     margin: 0px 1em;
@@ -160,17 +169,18 @@ button {
     flex-wrap: wrap;
     text-align: center;
   }
+
+  /* Checkbox Size */
   #buttons input {
     width: 18em;
     height: 25px;
   }
-  /* #buttons label {
-    margin-left: -12px;
-  } */
+
   #light-dark,
   #rgb {
     margin-bottom: 0.3em;
   }
+  /* Color Choosing Box Styling */
   #MyColorPicker {
     margin-right: 0em;
   }
@@ -178,5 +188,6 @@ button {
     font-size: 0.5em;
     margin-top: 5px;
     margin-left: 0;
+    margin-bottom: 15px;
   }
 }
