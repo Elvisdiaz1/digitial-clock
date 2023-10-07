@@ -2,6 +2,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important; */
 }
 
 #title {
@@ -28,6 +31,11 @@
 #MyColorPicker {
   display: none;
   margin-right: -11em;
+}
+
+button {
+  font-size: 1em;
+  margin-left: 10px;
 }
 
 #time.rainbow {
@@ -108,4 +116,69 @@
   justify-content: space-evenly;
   margin: 0px 20em;
   padding-top: 20px;
+}
+
+/* Tablet */
+@media screen and (min-width: 430px) and (max-width: 850px) {
+  #time {
+    font-size: 6em;
+    text-align: center;
+  }
+  #buttons {
+    font-size: 2.5em;
+    margin: 0 0;
+    flex-wrap: wrap;
+  }
+  button {
+    font-size: 0.6em;
+    padding: 5px;
+    margin-left: 15px;
+  }
+  #buttons input {
+    width: 4em;
+    height: 25px;
+  }
+  #MyColorPicker {
+    margin-right: -3em;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 430px) {
+  #title {
+    font-size: 6em;
+    margin-left: 0.7em;
+  }
+  #time {
+    font-size: 5em;
+    text-align: center;
+    padding-top: 3.5em;
+  }
+
+  #buttons {
+    font-size: 3.5em;
+    margin: 0px 1em;
+    margin-top: 35px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  #buttons input {
+    width: 18em;
+    height: 25px;
+  }
+  /* #buttons label {
+    margin-left: -12px;
+  } */
+  #light-dark,
+  #rgb {
+    margin-bottom: 0.3em;
+  }
+  #MyColorPicker {
+    margin-right: 0em;
+  }
+  button {
+    font-size: 0.5em;
+    margin-top: 5px;
+    margin-left: 0;
+  }
 }
