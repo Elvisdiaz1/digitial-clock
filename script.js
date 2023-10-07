@@ -13,6 +13,7 @@ setInterval(function () {
 function changeColor() {
   document.getElementById("time").style.color =
     document.getElementById("MyColorPicker").value;
+  document.getElementById("time").classList.remove("rainbow");
 }
 
 function lightMode() {
@@ -23,8 +24,12 @@ function DarkMode() {
 }
 
 colorButton.addEventListener("click", function () {
+  if (rgbModeChanger.checked) {
+    rgbModeChanger.checked = false;
+  }
   document.getElementById("MyColorPicker").style.display = "block";
   colorButton.innerText = "Confirm";
+
   changeColor();
 });
 

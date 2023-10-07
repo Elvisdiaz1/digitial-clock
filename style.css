@@ -4,6 +4,15 @@
   padding: 0;
 }
 
+#title {
+  font-size: 5em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: -2em;
+  margin-top: 1em;
+}
+
 #time {
   font-size: 10em;
   font-family: "Allerta Stencil", sans-serif;
@@ -13,10 +22,12 @@
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 1.5em;
+  text-shadow: 5px 5px 5px #000000;
 }
 
 #MyColorPicker {
   display: none;
+  margin-right: -11em;
 }
 
 #time.rainbow {
@@ -36,6 +47,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  text-shadow: 5px 5px 9px rgba(255, 255, 255, 0.7);
   -webkit-animation: rainbow 18s ease infinite;
   -z-animation: rainbow 18s ease infinite;
   -o-animation: rainbow 18s ease infinite;
@@ -88,3 +100,12 @@
 }
 
 /* RGB Code based on Milan Noheji. Code Snippet on https://codepen.io/nohoid/pen/eYXpNL */
+
+#buttons {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0px 20em;
+  padding-top: 20px;
+}
