@@ -30,8 +30,8 @@ This application license is: MIT
 
 ## Contribution
 
--- Elvis Diaz
--- RGB Code based on Milan Noheji. Code Snippet on https://codepen.io/nohoid/pen/eYXpNL
+- Elvis Diaz
+- RGB Code based on Milan Noheji. Code Snippet on https://codepen.io/nohoid/pen/eYXpNL
 
 ## Questions
 
