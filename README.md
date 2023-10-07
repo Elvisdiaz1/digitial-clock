@@ -32,6 +32,7 @@ This application license is: MIT
 
 - Elvis Diaz
 - RGB Code based on Milan Noheji. Code Snippet on https://codepen.io/nohoid/pen/eYXpNL
+- Clock favicon from Adioma. https://adioma.com/icons
 
 ## Questions
 
